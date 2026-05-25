@@ -1,0 +1,81 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+:root {
+  --background: #0a0e27;
+  --foreground: #e8eef5;
+  --card: #111633;
+  --card-foreground: #e8eef5;
+  --popover: #111633;
+  --popover-foreground: #e8eef5;
+  --primary: #a855f7;
+  --primary-foreground: #1a1a2e;
+  --secondary: #ec4899;
+  --secondary-foreground: #fff;
+  --muted: #2a3550;
+  --muted-foreground: #94a3b8;
+  --accent: #f97316;
+  --accent-foreground: #1a1a2e;
+  --destructive: #ef4444;
+  --destructive-foreground: #fff;
+  --border: #1e293b;
+  --input: #111633;
+  --ring: #a855f7;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+
+  p {
+    font-family: inherit;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .glow-text {
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 50%, #f97316 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl overflow-hidden;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:bg-white/10 hover:border-white/20;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl font-bold tracking-tight;
+  }
+
+  .gradient-blob {
+    position: fixed;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+    z-index: 0;
+    pointer-events: none;
+  }
+}
