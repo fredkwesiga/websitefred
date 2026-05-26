@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export function HeroSection() {
   const [displayedText, setDisplayedText] = useState('')
-  const fullText = 'I build user-focused digital experiences'
+  const fullText = 'Building thoughtful digital experiences through code and design.'
   const [isDeleting, setIsDeleting] = useState(false)
   const [index, setIndex] = useState(0)
 
@@ -38,11 +38,6 @@ export function HeroSection() {
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in-up">
             <div className="space-y-4">
-              {/* <div className="inline-block">
-                <span className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
-                  Welcome to my portfolio
-                </span>
-              </div> */}
 
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
                 Fred Kwesiga
@@ -53,19 +48,22 @@ export function HeroSection() {
               </div>
 
               {/* Typing Effect */}
-              <div className="h-16 flex items-center">
+              <div className="flex items-center">
                 <p className="text-lg text-muted-foreground font-light">
                   <span className="glow-text font-medium">{displayedText}</span>
                   <span className="animate-pulse">|</span>
                 </p>
               </div>
 
-              <div className="space-y-4 pt-4">
+              <div className="space-y-4 pt-">
                 <p className="text-muted-foreground leading-relaxed max-w-lg">
-                  I craft elegant web experiences through React, modern design systems, and user-centered thinking. Based in Uganda, passionate about solving real-world problems through technology.
+                  I build user-focused digital experiences through Software Engineering, UI/UX design, and modern technologies.
                 </p>
                 <p className="text-muted-foreground leading-relaxed max-w-lg">
-                  Passionate about empowering the next generation of developers through the Refactory Uganda 10X Program and Hire a School Lab Initiative.
+                  Passionate about solving real-world problems through technology while
+                  empowering young women with computer and software skills through Refactory Uganda’s
+                  Foundations of Software Development 10X Program under the Hire a School Lab Initiative
+                  partnered with Mastercard Foundation.
                 </p>
               </div>
             </div>
@@ -74,7 +72,7 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 pt-8">
               <Link
                 href="#projects"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-primary to-secondary rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-br from-primary/20 to-secondary rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 hover:scale-105"
               >
                 View Projects
                 <ArrowRight className="w-4 h-4" />
@@ -112,7 +110,7 @@ export function HeroSection() {
                 <span className="text-sm">GitHub</span>
               </a>
               <a
-                href="https://linkedin.com/in/fredkwesiga"
+                href="https://www.linkedin.com/in/fred-kwesiga65/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300"
@@ -123,7 +121,7 @@ export function HeroSection() {
                 <span className="text-sm">LinkedIn</span>
               </a>
               <a
-                href="mailto:fred@example.com"
+                href="mailto:fredkwesiga9@gmail.com"
                 className="group flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300"
               >
                 <svg className="w-6 h-6 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
@@ -143,8 +141,8 @@ export function HeroSection() {
               {/* Card content */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-white/10 backdrop-blur-xl p-8 flex flex-col justify-center items-center space-y-6">
                 <div className="space-y-2 text-center">
-                  <div className="text-6xl font-bold glow-text">FK</div>
-                  <p className="text-lg font-semibold text-foreground">Fred Kwesiga</p>
+
+                  <img className="w-48 h-48 rounded-full object-cover object-top" src="/Fred Kwesiga copy.jpeg" alt="Profile Picture" />
                   <p className="text-sm text-muted-foreground">Developer & Designer</p>
                 </div>
 
@@ -176,13 +174,6 @@ export function HeroSection() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-primary rounded-full animate-pulse" />
         </div>
       </div>
     </section>
