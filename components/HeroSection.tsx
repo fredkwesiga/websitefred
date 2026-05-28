@@ -61,9 +61,7 @@ export function HeroSection() {
                 </p>
                 <p className="text-muted-foreground leading-relaxed max-w-lg">
                   Passionate about solving real-world problems through technology while
-                  empowering young women with computer and software skills through Refactory Uganda’s
-                  Foundations of Software Development 10X Program under the Hire a School Lab Initiative
-                  partnered with Mastercard Foundation.
+                  empowering young women and men with computer and software skills.
                 </p>
               </div>
             </div>

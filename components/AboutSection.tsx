@@ -6,7 +6,7 @@ const stats = [
   { label: 'Years of Experience', value: '5+' },
   { label: 'Projects Completed', value: '15+' },
   { label: 'Happy Clients', value: '10+' },
-  { label: 'Mentees Trained', value: '30+' },
+  { label: 'Students/Mentees Trained', value: '74+' },
 ]
 
 export function AboutSection() {
@@ -34,25 +34,29 @@ export function AboutSection() {
           {/* Section Header */}
           <div className={`space-y-4 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="section-title glow-text">About Me</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl">
-              A Ugandan software developer and UI/UX designer passionate about creating digital experiences that solve real problems.
-            </p>
           </div>
 
           {/* Content Grid */}
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left Column - Text */}
             <div className={`space-y-6 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              <p className="text-muted-foreground leading-relaxed text-lg">
-                I&apos;m a software developer and UI/UX designer with a strong foundation in frontend development and user-centered design principles. With over 5 years of experience, I&apos;ve had the opportunity to work on diverse projects ranging from responsive web applications to mobile experiences.
+              <p className="text-slate-300/80 leading-relaxed text-lg">
+                I&apos;m a Software Developer and UI/UX designer with a strong foundation in frontend development and user-centered design principles back with Bachelor&apos;s Degree in Computer Science. With over 5 years of experience, I&apos;ve had the opportunity to work on diverse projects ranging from responsive web applications to mobile experiences.
               </p>
 
-              <p className="text-muted-foreground leading-relaxed text-lg">
-                My expertise spans modern web technologies including React, Next.js, and JavaScript frameworks, complemented by design skills in Figma and strong understanding of UX principles. I believe in building accessible, scalable systems that prioritize user needs.
+              <p className="text-slate-300/80 leading-relaxed text-lg">
+                My expertise spans modern web technologies including React, Next.js, and JavaScript frameworks, Python and PHP, complemented by design skills in Figma and strong understanding of UX principles. I believe in building accessible, scalable systems that prioritize user needs.
               </p>
 
-              <p className="text-muted-foreground leading-relaxed text-lg">
-                Beyond my professional work, I&apos;m deeply committed to mentorship and education. As a trainer with Refactory Uganda&apos;s Foundations of Software Development 10X Program, I&apos;m passionate about empowering young women with computer science and software engineering skills through the Hire a School Lab Initiative partnered with the Mastercard Foundation.
+              <p className="text-slate-300/80 leading-relaxed text-lg">
+                Over the years, I’ve worked on projects spanning healthcare, tourism, digital services, education, 
+                business platforms, and personal websites - including <a className="font-medium text-slate-100 hover:text-purple-500 transition-colors" href="https://www.everythinguganda.com" target="_blank" rel="noopener noreferrer" >Everything Uganda</a>,  <a className="font-medium text-slate-100 hover:text-purple-500 transition-colors" href="https://iicstechnologies.com/i/" target="_blank" rel="noopener noreferrer">IICS</a>  always focusing on creating accessible, scalable, and meaningful 
+                user experiences that balance design thinking with clean engineering.
+              </p>
+
+              <p className="text-slate-300/80 leading-relaxed text-lg">
+                Beyond my professional work, I&apos;m deeply committed to mentorship and education. I have trained  more than 74+ women with computer science and software engineering skills under  <a className="font-medium text-slate-100 hover:text-purple-500 transition-colors" href="https://refactory.academy" target="_blank" rel="noopener noreferrer">
+                  Refactory Uganda</a>&apos;s Foundations of Software Development 10X Program,through the Hire a School Lab Initiative partnered with the Mastercard Foundation.
               </p>
 
               <div className="flex gap-4 pt-4">
@@ -76,7 +80,7 @@ export function AboutSection() {
                     key={index}
                     className="card-glass card-hover p-6 rounded-xl text-center"
                   >
-                    <div className="text-3xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+                    <div className="text-3xl font-bold bg-gradient-to-br from-primary via-secondary to-accent bg-clip-text">
                       {stat.value}
                     </div>
                     <p className="text-xs text-muted-foreground mt-2">{stat.label}</p>
@@ -134,9 +138,17 @@ export function AboutSection() {
               <div className="card-glass p-6 rounded-xl space-y-3">
                 <h3 className="font-semibold text-foreground">Education</h3>
                 <div className="space-y-2">
-                  <p className="text-sm font-medium text-foreground">Refactory Uganda</p>
-                  <p className="text-xs text-muted-foreground">Foundations of Software Development</p>
-                  <p className="text-xs text-primary font-medium pt-2">Trainer & Mentor</p>
+                  <h2 className="text-sm font-semibold text-foreground">Bachelor of Science in Computer Science</h2>
+                  <h3 className="text-sm font-semibold text-muted-foreground">Victoria University - Kampala</h3>
+                  <p className="text-xs text-primary font-medium pt-2">2025 - Present</p>
+                </div>
+
+                <hr></hr>
+
+                <div className="space-y-2">
+                  <h2 className="text-sm font-semibold text-foreground">Certificate in Software Engineering</h2>
+                  <h3 className="text-xs text-muted-foreground">Refactory Uganda - Kampala</h3>
+                  <p className="text-xs text-primary font-medium pt-2">March 2021 - March 2022</p>
                 </div>
               </div>
             </div>
