@@ -134,52 +134,53 @@ export function ExperienceSection() {
                       : 'opacity-0 translate-y-10'
                   }`}
                 >
-                  <div className={`md:grid md:grid-cols-2 md:gap-8 ${index % 2 === 1 ? 'md:flex md:flex-row-reverse' : ''}`}>
-                    {/* Timeline Dot */}
-                    <div className="hidden md:flex justify-center">
-                      <div className="relative">
-                        <div className={`w-4 h-4 rounded-full absolute left-1/2 top-2 transform -translate-x-1/2 ${
-                          experience.isEducation
-                            ? 'bg-gradient-to-r from-primary to-secondary'
-                            : 'bg-gradient-to-r from-secondary to-accent'
-                        }`} />
-                      </div>
+                  <div className="relative">
+                    {/* Timeline Dot - Hidden on smaller screens, visible on desktop */}
+                    <div className="hidden md:block absolute -left-12 top-6">
+                      <div className={`w-4 h-4 rounded-full ${
+                        experience.isEducation
+                          ? 'bg-gradient-to-r from-primary to-secondary'
+                          : 'bg-gradient-to-r from-secondary to-accent'
+                      }`} />
                     </div>
 
-                    {/* Content */}
-                    <div>
-                      <div className={`card-glass card-hover p-6 md:p-8 rounded-xl space-y-4 ${experience.isEducation ? 'border-primary/30' : ''}`}>
-                        <div>
-                          <h3 className="text-xl font-bold text-foreground">{experience.position}</h3>
-                          <p className={`text-sm font-medium ${experience.isEducation ? 'text-primary' : 'text-secondary'}`}>
-                            {experience.company}
-                          </p>
-                          <p className="text-xs text-muted-foreground mt-1">{experience.period}</p>
-                        </div>
+                    {/* Content - Full Width */}
+                    <div className="group card-glass card-hover p-6 md:p-8 rounded-xl space-y-4 transition-all duration-300 hover:bg-white/8 hover:border-white/20">
+                      <div className="space-y-2">
+                        <h3 className="text-xl md:text-2xl font-bold text-foreground transition-all duration-300 group-hover:text-accent">
+                          {experience.position}
+                        </h3>
+                        
+                        <p className={`text-sm md:text-base font-medium transition-all duration-300 group-hover:text-accent ${
+                          experience.isEducation ? 'text-primary' : 'text-secondary'
+                        }`}>
+                          {experience.company}
+                        </p>
+                        <p className="text-xs md:text-sm text-muted-foreground mt-1">{experience.period}</p>
+                      </div>
 
-                        <ul className="space-y-2">
-                          {experience.description.map((item, i) => (
-                            <li key={i} className="text-sm text-muted-foreground flex gap-3">
-                              <span className="text-primary mt-1">▸</span>
-                              <span>{item}</span>
-                            </li>
-                          ))}
-                        </ul>
+                      <ul className="space-y-2">
+                        {experience.description.map((item, i) => (
+                          <li key={i} className="text-sm text-muted-foreground flex gap-3">
+                            <span className="text-primary mt-1">▸</span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
 
-                        <div className="flex flex-wrap gap-2 pt-4">
-                          {experience.skills.map((skill) => (
-                            <span
-                              key={skill}
-                              className={`text-xs px-2 py-1 rounded-full ${
-                                experience.isEducation
-                                  ? 'bg-primary/10 text-primary'
-                                  : 'bg-secondary/10 text-secondary'
-                              }`}
-                            >
-                              {skill}
-                            </span>
-                          ))}
-                        </div>
+                      <div className="flex flex-wrap gap-2 pt-4">
+                        {experience.skills.map((skill) => (
+                          <span
+                            key={skill}
+                            className={`text-xs font-medium px-4 py-2 rounded-full border transition-all duration-300 ${
+                              experience.isEducation
+                                ? 'bg-primary/10 text-primary border-primary/30 group-hover:bg-primary/40 group-hover:text-accent group-hover:border-accent/50'
+                                : 'bg-secondary/10 text-secondary border-secondary/30 group-hover:bg-accent/30 group-hover:text-accent group-hover:border-accent/50'
+                            }`}
+                          >
+                            {skill}
+                          </span>
+                        ))}
                       </div>
                     </div>
                   </div>
