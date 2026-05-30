@@ -77,7 +77,7 @@ export function Navigation() {
 
           <div className="flex gap-4 justify-center pt-6 border-t border-white/10">
             <a
-              href="https://github.com"
+              href="https://github.com/fredkwesiga"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300"
@@ -88,7 +88,7 @@ export function Navigation() {
               </svg>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/fred-kwesiga65/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300"
@@ -99,7 +99,7 @@ export function Navigation() {
               </svg>
             </a>
             <a
-              href="mailto:fred@example.com"
+              href="mailto:fredkwesiga9@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors duration-300"
               aria-label="Email"
             >
