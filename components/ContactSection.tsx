@@ -25,15 +25,15 @@ export function ContactSection() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'fred@example.com',
-      href: 'mailto:fred@example.com',
+      value: 'fredkwesiga9@gmail.com',
+      href: 'mailto:fredkwesiga9@gmail.com',
       color: 'from-primary to-secondary',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
       value: 'fredkwesiga',
-      href: 'https://linkedin.com/in/fredkwesiga',
+      href: 'https://www.linkedin.com/in/fred-kwesiga65/',
       color: 'from-secondary to-accent',
     },
     {
@@ -103,7 +103,7 @@ export function ContactSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <a
-                href="mailto:fred@example.com"
+                href="mailto:fredkwesiga9@gmail.com"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-gradient-to-r from-primary to-secondary rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 hover:scale-105"
               >
                 Start a Project
