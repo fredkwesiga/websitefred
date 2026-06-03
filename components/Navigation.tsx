@@ -67,7 +67,7 @@ export function Navigation() {
               >
                 <div className="flex items-center gap-3">
                   {activeSection === item.href.slice(1) && (
-                    <div className="w-2 h-2 rounded-full bg-gradient-to-r from-primary to-accent" />
+                    <div className="w-2 h-2 rounded-full bg-linear-to-br from-primary to-accent" />
                   )}
                   {item.label}
                 </div>

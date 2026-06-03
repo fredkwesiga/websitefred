@@ -58,7 +58,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://linkedin.com/in/fredkwesiga"
+                  href="https://www.linkedin.com/in/fred-kwesiga65/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -68,7 +68,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://twitter.com/fredkwesiga"
+                  href="https://x.com/fredkwesiga"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -86,7 +86,7 @@ export function Footer() {
               Ready to discuss a project? Send me an email.
             </p>
             <a
-              href="mailto:fred@example.com"
+              href="mailto:fredkwesiga9@gmail.com"
               className="inline-block px-4 py-2 bg-primary/20 text-primary rounded-lg text-sm font-medium hover:bg-primary/30 transition-colors"
             >
               Contact Me
@@ -101,7 +101,7 @@ export function Footer() {
               © {currentYear} Fred Kwesiga. All rights reserved.
             </p>
             <p>
-              Built with Next.js, React, and Tailwind CSS.
+              Developed by Fred Kwesiga
             </p>
           </div>
         </div>
