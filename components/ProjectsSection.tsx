@@ -17,6 +17,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 6,
+    title: 'Mizizi Hai',
+    description: 'A family tree and story preservation platform that lets families record their relatives, explore their family tree, and keep their family stories alive for future generations.',
+    image: '/projects/mizizi-hai.jpg',
+    technologies: ['React', 'NestJS', 'PostgreSQL', 'TypeScript', 'Prisma', 'Tailwind CSS'],
+    liveUrl: 'https://mizizihai.com/login',
+  },
+  {
     id: 1,
     title: 'Africa Connect',
     description: 'A talent marketplace designed specifically for African youth by providing them with essential skills training and connecting them to global opportunities.',
